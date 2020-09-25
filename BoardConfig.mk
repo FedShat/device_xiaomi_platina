@@ -30,10 +30,8 @@ DEVICE_PATH := device/xiaomi/platina
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := platina_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
-KERNEL_TOOLCHAIN := $(PWD)/compiler/bin/
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
