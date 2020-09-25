@@ -30,14 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Inherit AOSP product configuration
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDE_STOCK_ARCORE := true
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
@@ -50,6 +43,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_platina
+PRODUCT_NAME := aosip_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
